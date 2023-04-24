@@ -55,13 +55,16 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="xqI-3i-BUA"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                        <connections>
+                                            <action selector="stepBtnTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="YrK-Mb-UGZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ok6-MK-6sv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="3Wg-Gc-c7O"/>
                             <constraint firstItem="Ok6-MK-6sv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Si9-0R-b8w"/>
@@ -69,6 +72,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ok6-MK-6sv" secondAttribute="bottom" constant="49" id="kBz-wO-p3v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="CFy-Bh-o5W" id="fut-LD-mJi"/>
+                        <outlet property="redLight" destination="oDo-Ag-9Nf" id="YOz-8I-TGL"/>
+                        <outlet property="stepBtn" destination="cEP-qf-bfZ" id="qsb-j0-bjB"/>
+                        <outlet property="yellowLight" destination="TpW-aj-Ggi" id="tHj-x7-bCc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

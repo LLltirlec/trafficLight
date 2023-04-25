@@ -8,9 +8,6 @@
 import UIKit
 
 extension UIView {
-    func asCircle() {
-        self.layer.cornerRadius = self.layer.bounds.width / 2
-    }
 }
 
 class ViewController: UIViewController {
@@ -19,17 +16,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var yellowLight: UIView!
     @IBOutlet weak var greenLight: UIView!
     @IBOutlet weak var stepBtn: UIButton!
+    @IBOutlet weak var rightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leftConstraint: NSLayoutConstraint!
     
-    private var radius: CGFloat = 90
     private var state = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLight.asCircle()
-        yellowLight.asCircle()
-        greenLight.asCircle()
+        asCircle(view: redLight)
+        asCircle(view: yellowLight)
+        asCircle(view: greenLight)
     }
 
+    func asCircle(view: UIView) {
+        let constsSum = rightConstraint.constant + leftConstraint.constant
+        let Width = self.view.bounds.width - constsSum
+        view.layer.cornerRadius = Width / 2
+    }
+    
     @IBAction func stepBtnTapped() {
         stepBtn.setTitle("Next", for: .normal)
         switch state{

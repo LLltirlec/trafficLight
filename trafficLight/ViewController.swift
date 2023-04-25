@@ -7,10 +7,7 @@
 
 import UIKit
 
-extension UIView {
-}
-
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     @IBOutlet weak var redLight: UIView!
     @IBOutlet weak var yellowLight: UIView!

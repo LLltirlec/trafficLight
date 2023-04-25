@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,25 +13,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="trafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="Ok6-MK-6sv">
-                                <rect key="frame" x="100" y="48" width="120" height="473.5"/>
+                                <rect key="frame" x="100" y="48" width="175" height="572.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="edr-NA-A1W">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="376"/>
+                                        <rect key="frame" x="11.5" y="0.0" width="152" height="475"/>
                                         <subviews>
                                             <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDo-Ag-9Nf">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="152" height="153"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                             </view>
                                             <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpW-aj-Ggi">
-                                                <rect key="frame" x="0.0" y="128" width="120" height="120"/>
+                                                <rect key="frame" x="0.0" y="161" width="152" height="153"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             </view>
                                             <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFy-Bh-o5W">
-                                                <rect key="frame" x="0.0" y="256" width="120" height="120"/>
+                                                <rect key="frame" x="0.0" y="322" width="152" height="153"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </view>
                                         </subviews>
@@ -46,7 +46,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEP-qf-bfZ">
-                                        <rect key="frame" x="9.5" y="439" width="101" height="34.5"/>
+                                        <rect key="frame" x="37" y="538" width="101" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="g5A-Je-LYc"/>
                                             <constraint firstAttribute="width" secondItem="cEP-qf-bfZ" secondAttribute="height" multiplier="50:17" id="zKZ-A9-B3N"/>

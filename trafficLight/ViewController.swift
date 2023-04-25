@@ -7,6 +7,12 @@
 
 import UIKit
 
+extension UIView {
+    func asCircle() {
+        self.layer.cornerRadius = self.layer.bounds.width / 2
+    }
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var redLight: UIView!
@@ -19,9 +25,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLight.layer.cornerRadius = radius
-        yellowLight.layer.cornerRadius = radius
-        greenLight.layer.cornerRadius = radius
+        redLight.asCircle()
+        yellowLight.asCircle()
+        greenLight.asCircle()
     }
 
     @IBAction func stepBtnTapped() {
